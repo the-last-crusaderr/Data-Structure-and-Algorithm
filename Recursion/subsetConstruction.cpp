@@ -8,6 +8,7 @@ vector <int> subset;
 int n = 6 ;
 
 void search(int k){
+    //processing subset...
     if (k==n){
         for(int i=0;i<subset.size();i++) {
             cout << subset[i] << " ";
