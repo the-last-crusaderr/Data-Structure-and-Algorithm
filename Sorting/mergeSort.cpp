@@ -73,7 +73,6 @@ vector<int> mergeSort(vector<int> v){
 
 int main(){
 
-    int n = 6 ;
     vector<int> v = {6,4,2,3,8,5};
 
     vector<int> afterSorting = mergeSort( v);
