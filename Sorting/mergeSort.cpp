@@ -1,7 +1,17 @@
 // Techniques to remember while merge sorting..
+/*
+
+    Divides the vector into two halves..
+    sort each one
+    combine them
+*/
+
+
+
+
+// mergeSort(vector) -> vector
 // mergeSort
-// mergeSort
-// merging......
+// merging(vector,vector) -> merge vector...
 
 
 #include <iostream>
