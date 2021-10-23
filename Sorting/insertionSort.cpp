@@ -1,3 +1,8 @@
+// most beautiful algorithm
+// once pointer go forward to n
+// another go backward from i to n
+// compare at every stages
+
 
 
 #include <iostream>
@@ -9,8 +14,10 @@ void insertionSort(int arr[],int n){
 
     for(int i=1;i<n;i++){
         for(int j=i;j>0;j--){
-            if(arr[j] < arr[j-1]  )
-                swap(arr[j],arr[j-1]);
+            if(arr[j] < arr[j-1]  ){
+                cout << "Swapping done-> " << arr[j] << "->"  << arr[j-1] << endl;
+                swap(arr[j],arr[j-1]);    
+                }
             else 
                 break;    
         }
