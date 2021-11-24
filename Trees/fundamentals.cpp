@@ -1,5 +1,5 @@
 #include <iostream>
-
+using namespace std;
 
 /*
 
@@ -19,8 +19,8 @@
 
 struct Node{
     int data;
-    Node* left;
-    Node* right;
+    struct Node* left = NULL;
+    struct Node* right = NULL;
 };
 
 
@@ -28,12 +28,22 @@ struct Node{
 
 
 int main(){
-    Node* root;
+
+//declaration
+    struct Node* root = new struct Node();
+    struct Node* first = new struct Node(); 
+    struct Node* second = new struct Node();
+
+//initialisation
     root->data = 1;
+    first->data = 4;
+    second->data = 5;
 
+//assigning left and right child to root
+    root->left = first;
+    root->right = second;
 
-
-
+    cout << root->data << " " << first->data  << " "  << second->data;
 
     return 0;
 }
